@@ -21,16 +21,14 @@ const arr = [];
 
 function generateNum() {
 	for (let i = 0; i < 10; i++) {
-		arr[i] = getRandomNum();
+		arr[i] = getRandomNum(-10, 10);
 	}
 
 	generated.textContent = arr;
 }
 
 function getRandomNum(min, max) {
-	min = Math.ceil(-10);
-	max = Math.floor(10);
-	return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max + 1 - min) + min);
 }
 
 function getMin() {
