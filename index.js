@@ -40,20 +40,14 @@ function getMax() {
 }
 
 function getAverageNum() {
-	for (let i = 0; i < arr.length; i++) {
-		let averageSum = arr.reduce((acc, num) => acc + num);
-		average.textContent = averageSum / arr.length;
-	}
+	let averageSum = arr.reduce((acc, num) => acc + num);
+	average.textContent = averageSum / arr.length;
 }
 
 function getSum() {
-	for (let i = 0; i < arr.length; i++) {
-		sum.textContent = arr.reduce((acc, num) => acc + num);
-	}
+	sum.textContent = arr.reduce((acc, num) => acc + num);
 }
 
 function getMult() {
-	for (let i = 0; i< arr.length; i++) {
-		mult.textContent = arr.reduce((acc, num) => acc * num);
-	}
+	mult.textContent = arr.reduce((acc, num) => acc * num);
 }
