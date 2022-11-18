@@ -1,2 +1,3 @@
-# JS pracice 
-## number generator
+# Number generator
+
+JS practice
